@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Midnight",
+	"description": "Black-based palette with a dark feel",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#000000",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#dd0088",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#111111",
+					"name": "Neutral",
+					"slug": "neutral"
+				}
+			]
+		}
+	},
+	"styles": {
+		"css": "::selection { background-color: var(--wp--preset--color--primary); color: var(--wp--preset--color--contrast); }",
+		"elements": {
+			"button": {
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--primary)",
+						"text": "var(--wp--preset--color--contrast)"
+					}
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--contrast)"
+					}
+				}
+			}
+		}
+	}
+}
