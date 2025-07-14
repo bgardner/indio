@@ -24,7 +24,7 @@
 			<p> · </p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph -->
-			<p><a href="https://briangardner.com/indio/">Indio</a> <?php echo esc_html__( 'theme by', 'indio' ); ?> <a href="https://briangardner.com/">BG</a></p>
+			<p><a href="https://briangardner.com/indio/">Indio</a> <?php echo esc_html__( 'theme by', 'indio' ); ?> <a href="https://briangardner.com/">Brian Gardner</a></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
