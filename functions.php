@@ -37,6 +37,21 @@ function indio_enqueue_stylesheet_script() {
 add_action( 'wp_enqueue_scripts', 'indio_enqueue_stylesheet_script' );
 
 /**
+ * Register Sidebar template part.
+ */
+function indio_template_parts( array $areas ) {
+	$areas[] = [
+		'area'        => 'sidebar',
+		'area_tag'    => 'section',
+		'label'       => __( 'Sidebar', 'indio' ),
+		'description' => __( 'The Sidebar template defines a page area that typically contains secondary content, navigation, or social icons.', 'indio' ),
+		'icon'        => 'sidebar',
+	];
+	return $areas;
+}
+add_filter( 'default_wp_template_part_areas', 'indio_template_parts' );
+
+/**
  * Register block styles.
  */
 function indio_register_block_styles() {

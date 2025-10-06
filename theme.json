@@ -139,7 +139,7 @@
 			"defaultFontSizes": false,
 			"dropCap": false,
 			"fluid": {
-				"maxViewportWidth": "1280px",
+				"maxViewportWidth": "1200px",
 				"minViewportWidth": "600px"
 			},
 			"fontFamilies": [
@@ -278,11 +278,17 @@
 				}
 			},
 			"core/navigation": {
+				"css": "& .wp-block-navigation__responsive-container-open, .wp-block-navigation__responsive-container-close {border: 1px solid currentColor; padding: 2px;}",
 				"spacing": {
 					"blockGap": "var(--wp--preset--spacing--20)"
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--x-small)"
+				}
+			},
+			"core/navigation-submenu": {
+				"border": {
+					"color": "currentColor !important"
 				}
 			},
 			"core/post-comments-form": {
@@ -475,10 +481,12 @@
 					"fontWeight": "var(--wp--custom--font-weight--light)",
 					"lineHeight": "var(--wp--custom--line-height--medium)"
 				},
-				":hover": {
-					"color": {
-						"background": "var(--wp--preset--color--primary)",
-						"text": "var(--wp--preset--color--base)"
+				":focus": {
+					"outline": {
+						"color": "var(--wp--preset--color--contrast)",
+						"offset": "1px",
+						"style": "solid",
+						"width": "2px"
 					}
 				}
 			},
@@ -533,20 +541,32 @@
 				"color": {
 					"text": "var(--wp--preset--color--contrast)"
 				},
+				"typography": {
+					"textDecoration": "underline"
+				},
 				":hover": {
 					"color": {
 						"text": "var(--wp--preset--color--primary)"
 					}
-				}
+				},
+				":focus": {
+					"outline": {
+						"color": "currentColor",
+						"offset": "1px",
+						"style": "solid",
+						"width": "1px"
+					}
+				},
+				"css": "a, a:not(.wp-element-button) {text-decoration-thickness: 1px; text-underline-offset: 1px;}"
 			}
 		},
 		"spacing": {
 			"blockGap": "var(--wp--preset--spacing--30)",
 			"padding": {
 				"top": "0",
-				"right": "var(--wp--preset--spacing--40)",
+				"right": "var(--wp--preset--spacing--30)",
 				"bottom": "0",
-				"left": "var(--wp--preset--spacing--40)"
+				"left": "var(--wp--preset--spacing--30)"
 			}
 		},
 		"typography": {
@@ -568,7 +588,7 @@
 			"title": "Footer"
 		},
 		{
-			"area": "uncategorized",
+			"area": "sidebar",
 			"name": "sidebar",
 			"title": "Sidebar"
 		}

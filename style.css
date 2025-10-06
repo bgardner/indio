@@ -7,7 +7,7 @@ Description: Indio is a minimal WordPress block theme—rooted in nature, handcr
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.9.1
+Version: 0.9.2
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: indio
@@ -24,17 +24,13 @@ Tags: block-patterns, block-styles, custom-colors, custom-menu, editor-style, fu
 
 a,
 button,
-input,
-textarea,
 .wp-element-button {
-	transition: all 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-a,
-a:focus,
-a:hover,
-a:not(.wp-element-button) {
-	text-decoration-thickness: 1px;
+input,
+textarea {
+	transition: filter 0.2s ease-in-out;
 }
 
 b,
@@ -67,9 +63,10 @@ textarea {
 	width: 100%;
 }
 
-input:focus,
+input:not([type="submit"]):focus,
 textarea:focus {
-	outline: none;
+	border-color: var(--wp--preset--color--primary);
+	outline: 1px solid var(--wp--preset--color--primary);
 }
 
 input[type="checkbox"],
@@ -99,45 +96,21 @@ textarea {
 /* -- Navigation -- */
 
 .wp-block-navigation__responsive-container.is-menu-open {
-	padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--40);
+	padding: var(--wp--preset--spacing--30);
 }
 
-.wp-block-navigation__responsive-container-close,
-.wp-block-navigation__responsive-container-open {
-	border: 1px solid currentColor;
-	padding: 2px;
-}
 
 /* -- Navigation Submenu -- */
 
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open,
-.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
-	background-color: var(--wp--preset--color--base);
-	color: var(--wp--preset--color--contrast);
+.wp-block-navigation__submenu-container {
+	min-width: 150px !important;
+	padding: 10px !important;
 }
 
-.has-contrast-background-color .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open,
-.has-contrast-background-color .wp-block-navigation__submenu-container {
-	background-color: var(--wp--preset--color--contrast);
-	color: var(--wp--preset--color--base);
-}
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
-	border-color: var(--wp--preset--color--contrast);
-	min-width: 180px !important;
-	padding: 10px;
-}
-
-.has-contrast-background-color .wp-block-navigation__submenu-container {
-	border-color: var(--wp--preset--color--base);
-}
-
-.wp-block-navigation :where(.wp-block-navigation__submenu-container) .wp-block-navigation-item__content {
-	padding: 2px 10px;
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	padding: 2px 10px !important;
 }
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container {
-	padding-left: 10px !important;
-	padding-right: 10px !important;
-	padding-top: 5px !important;
+	padding: 5px 10px 0 !important;
 }
