@@ -146,9 +146,8 @@
 				{
 					"fontFace": [
 						{
-							"fontDisplay": "swap",
+							"fontDisplay": "block",
 							"fontFamily": "Inter",
-							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "100 900",
 							"src": [
@@ -158,7 +157,6 @@
 						{
 							"fontDisplay": "block",
 							"fontFamily": "Inter",
-							"fontStretch": "normal",
 							"fontStyle": "italic",
 							"fontWeight": "100 900",
 							"src": [
