@@ -146,7 +146,7 @@
 				{
 					"fontFace": [
 						{
-							"fontDisplay": "block",
+							"fontDisplay": "swap",
 							"fontFamily": "Inter",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
