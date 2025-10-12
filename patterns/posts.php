@@ -3,7 +3,7 @@
  * Title: List of posts
  * Slug: indio/posts
  * Categories: posts
- * Block Types: core/query
+ * Inserter: no
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Posts"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
