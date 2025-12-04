@@ -3,7 +3,7 @@ Contributors: bgardner
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 7.2
-Stable tag: 0.9.3
+Stable tag: 0.9.4
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,6 +12,9 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Indio is a minimal WordPress block theme—rooted in nature, handcrafted with purpose, and designed to inspire and awaken your creative soul.
 
 == Changelog ==
+
+= 0.9.4 =
+* Released: December 4, 2025
 
 = 0.9.3 =
 * Released: October 6, 2025
