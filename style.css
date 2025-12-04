@@ -50,16 +50,11 @@ mark {
 input,
 select,
 textarea {
-	background-color: var(--wp--preset--color--base);
-	border: 1px solid var(--wp--preset--color--contrast);
-	border-radius: 0;
 	box-sizing: border-box;
-	color: var(--wp--preset--color--contrast);
 	font-family: inherit;
-	font-size: var(--wp--preset--font-size--x-small);
-	font-weight: 300;
+	font-size: inherit;
+	font-weight: inherit;
 	line-height: var(--wp--custom--line-height--medium);
-	padding: 10px 15px;
 	width: 100%;
 }
 
@@ -73,15 +68,6 @@ input[type="checkbox"],
 input[type="image"],
 input[type="radio"] {
 	width: auto;
-}
-
-input[type="button"],
-input[type="email"],
-input[type="search"],
-input[type="submit"],
-input[type="text"],
-textarea {
-	-webkit-appearance: none;
 }
 
 ::placeholder {
