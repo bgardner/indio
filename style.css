@@ -18,10 +18,6 @@ Tags: block-patterns, block-styles, custom-colors, custom-menu, editor-style, fu
 /* Defaults
 ---------------------------------------- */
 
-:root {
-	font-feature-settings: 'ss01', 'ss03', 'cv10'; /* -- Specific to Inter font -- */
-}
-
 a,
 button,
 .wp-element-button {

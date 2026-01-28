@@ -137,6 +137,7 @@
 						{
 							"fontDisplay": "block",
 							"fontFamily": "Inter",
+							"fontFeatureSettings": "'ss01', 'ss03', 'cv10'",
 							"fontStyle": "normal",
 							"fontWeight": "100 900",
 							"src": [
@@ -146,6 +147,7 @@
 						{
 							"fontDisplay": "block",
 							"fontFamily": "Inter",
+							"fontFeatureSettings": "'ss01', 'ss03', 'cv10'",
 							"fontStyle": "italic",
 							"fontWeight": "100 900",
 							"src": [
